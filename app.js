@@ -26,6 +26,12 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/paragraph',
             template: 'I could sure use a drink right now.'
         })
+        .state('booking', {
+            url: '/booking',
+            templateUrl: 'bookingWindow/booking.html',
+            controller: 'bookingController'
+        })
+        
         
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
         .state('about', {
