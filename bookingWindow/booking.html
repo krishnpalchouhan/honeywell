@@ -1,3 +1,23 @@
-helloasdasdas
+<div class="row color-bg">
+		<div class="col-xs-8 col-xs-offset-2">
+		<h3><span class="card-title span">Chamak Kannada | 2D </span></h3>
+		<h3><span class="card-title span">The Cinema - GT World Mall, Magadi Road, Bengaluru</span></h3>
+		<h3><span class="card-title span">The Cinema - GT World Mall, Magadi Road, Bengaluru</span></h3>
+	</div>
+</div>
+<div class="col-xs-10 col-xs-offset-3">
 
-{{message}}
+	
+	<table class="seats-layout">
+		<tr ng-repeat="row in rows">
+			<td ng-repeat="column in row" id="seat_id_{{column.id}}" ng-click="select(column.id,column)"> 
+			{{column.id}}</td>
+		</tr>
+
+	</table>
+	<div class="row">
+		<label class="text-center">All EYES THIS WAY PLEASE</label> 
+	</div>
+
+</div>
+
