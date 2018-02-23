@@ -1,0 +1,28 @@
+package com.hackathon.hw.core;
+
+public class BrowserOperations {
+
+	
+	@Parameter({"browser","baseURL"})
+	@BeforeTest
+	public void openBrowser(String browser, String baseURL)
+	{
+		if(browser.equalsIgnoreCase("ff"))
+		{
+			
+		}
+		
+		if(browser.equalsIgnoreCase("ch"))
+		{
+			
+		}
+		
+		else
+		{
+			
+		}
+	}
+	
+}
+	
+	
