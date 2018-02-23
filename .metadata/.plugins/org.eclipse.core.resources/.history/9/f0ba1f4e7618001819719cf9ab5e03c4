@@ -1,0 +1,9 @@
+package com.hackathon.hw.pageelements;
+
+import org.openqa.selenium.By;
+
+public class MoviesPageElements {
+	
+	public By DROPDOWN_LANGUAGE = By.xpath("//div[@id='dLangWrap']//p");
+
+}

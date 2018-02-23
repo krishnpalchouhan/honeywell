@@ -1,0 +1,50 @@
+<div class="m-banner">
+<div class="jumbotron text-center">
+    <img src="images/banner.jpg" />
+    
+    <!--a ui-sref=".list" class="btn btn-primary">List</a>
+    <a ui-sref=".paragraph" class="btn btn-danger">Paragraph</a-->
+    
+</div>
+</div>
+
+<div class="m-filter">
+
+    <form>
+        <label>Select Language: </label>
+        <input type="radio" name="lang" value= "english" /> English
+        <input type="radio" name="lang" value= "hindi" /> Hindi
+        <input type="radio" name="lang" value= "tamil" /> Tamil
+        <input type="radio" name="lang" value= "all" checked ="checked " /> All
+
+    </form>
+</div>
+
+<div class="m-movie-list">
+    <div class="container" > 
+        <div class="row">
+
+
+                <div class="col-md-3" ng-repeat="movie in movies">
+                    <div class="m-movie-details">
+                        <div class="m-movie__image">
+                                <img alt="" title="" src="https://loremflickr.com/320/240" />
+                        </div>
+                        <div class="m-movie__detail">
+                            <h3>{{movie.name}}</h3>
+                            <p>Duration: {{movie.duration}}</p>
+                            <p>Price: {{movie.price}}</p>
+                        </div>
+                        <div class="m-movie__book"><a >Book Now</a></div>
+                    </div>
+                </div>
+                
+                
+        
+        </div>
+
+
+    </div>
+</div>
+
+<div ui-view></div>

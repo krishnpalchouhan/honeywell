@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests" thread-count="2">
+  <test name="Test1">
+    <parameter name="browser" value="ch"/>
+    <parameter name="baseURL" value="https://in.bookmyshow.com/"/>
+    <classes>
+      <class name="com.hackathon.hw.pagetest.BookMyMovieTestSet1">
+        <methods>
+           <include name="bookMyMovieTest1"/>
+        </methods>
+      </class>
+    </classes>
+  </test> 
+  
+  
+</suite>

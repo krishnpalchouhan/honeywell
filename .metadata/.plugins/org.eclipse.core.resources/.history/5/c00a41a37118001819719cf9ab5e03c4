@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <parameter name="browser" value="ch"/>
+    <parameter name="baseURL" value="https://in.bookmyshow.com/"/>
+    <classes>
+      <class name="BookMyMovieTestSet1">
+        <methods>
+           <include name="bookMyMovieTest1"/>
+        </methods>
+      </class>
+    </classes>
+  </test> 
+</suite>

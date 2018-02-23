@@ -1,0 +1,23 @@
+package com.hackathon.hw.pagetest;
+
+import org.testng.annotations.Test;
+
+import com.hackathon.hw.core.BrowserOperations;
+import com.hackathon.hw.pageobjects.HomePage;
+
+public class BookMyMovieTestSet1 extends BrowserOperations{
+	
+HomePage homePage = null;
+	
+
+	
+	@Test
+	public void bookMyMovieTest1()
+	{
+		homePage = new HomePage();
+		homePage.clickMoviesLink();
+		
+	}
+	
+
+}

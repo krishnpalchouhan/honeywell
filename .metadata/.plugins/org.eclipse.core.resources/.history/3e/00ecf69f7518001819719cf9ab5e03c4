@@ -1,0 +1,29 @@
+package com.hackathon.hw.pagetest;
+
+import org.testng.annotations.Test;
+
+import com.hackathon.hw.core.BrowserOperations;
+import com.hackathon.hw.pageobjects.HomePage;
+
+public class BookMyMovieTestSet1 extends BrowserOperations{
+	
+HomePage homePage = null;
+MoviesPage moviesPage = null;
+	
+
+	
+	@Test
+	public void bookMyMovieTest1()
+	{
+		homePage = new HomePage(driver);
+		homePage.clickMoviesLink();
+		
+		moviesPage = new HomePage(driver);
+		moviesPage.selectLanguage("हिंदी");
+		
+		
+		
+	}
+	
+
+}

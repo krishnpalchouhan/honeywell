@@ -1,0 +1,31 @@
+package com.hackathon.hw.pageobjects;
+
+import org.openqa.selenium.WebDriver;
+
+import com.hackathon.hw.core.ActionDriver;
+import com.hackathon.hw.pageelements.HomePageElements;
+import com.hackathon.hw.pageelements.MoviesPageElements;
+
+public class MoviesPage extends ActionDriver{
+	
+	MoviesPageElements mpe = null;
+	
+	public MoviesPage(WebDriver driver)
+	{
+		super(driver);
+		mpe = new MoviesPageElements();
+	}
+	
+	public void selectLanguage(String text)
+	{
+		selectFromDropdownByVisibleTest(mpe.DROPDOWN_LANGUAGE, text);
+	}
+	
+	public void enterACity(String text)
+	{
+		typeInTextbox(mpe.TEXTBOX_CITY_ON_POPUP, text);
+	}
+	
+	
+
+}

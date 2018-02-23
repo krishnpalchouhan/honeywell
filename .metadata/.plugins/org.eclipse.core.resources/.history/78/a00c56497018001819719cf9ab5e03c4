@@ -1,0 +1,23 @@
+package com.hackathon.hw.pagetest;
+
+import com.hackathon.hw.core.BrowserOperations;
+import com.hackathon.hw.pageobjects.HomePage;
+
+public class BookMyMovieTestSet1 extends BrowserOperations{
+	
+HomePage homePage = null;
+	
+	public BookMyMovieTestSet1()
+	{
+		hpe = new HomePageElements();
+	}
+	
+	@Test
+	public bookMyMovieTest1()
+	{
+		
+		
+	}
+	
+
+}

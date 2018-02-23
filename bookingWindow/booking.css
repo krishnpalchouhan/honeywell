@@ -1,0 +1,21 @@
+table.seats-layout>tbody>tr>td{
+	    display: inline-block;
+    font-size: 10.5px;
+    line-height: 7px;
+    font-weight: 600;
+    padding: 8px;
+    border: 1px solid #49ba8e;
+    margin: 10px;
+}
+table.seats-layout>tbody>tr>td:hover,table.seats-layout>tbody>tr>td.selected{
+	    display: inline-block;
+    font-size: 10.5px;
+    line-height: 7px;
+    font-weight: 600;
+    padding: 8px;
+    background:#49ba8e;
+    margin: 10px;
+}
+.color-bg{
+	background:#49ba8e;
+}
